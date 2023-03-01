@@ -16,6 +16,13 @@ app.use(`/tipe-kamar`, tipeKamarRoute);
 const KamarRoute = require(`./routes/kamar.routes`);
 app.use(`/kamar`, KamarRoute);
 
+const pemesananRoute=require(`./routes/pemesanan.routes`);
+app.use(`/pemesanan`, pemesananRoute);
+
+app.use(express.static(__dirname));
+app.use(express.static("foto-kamar"));
+app.use(express.static("foto-user"));
+
 app.listen(PORT, () => {
   console.log(`Server of Hotel runs on port
 ${PORT}`);

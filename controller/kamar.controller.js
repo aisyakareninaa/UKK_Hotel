@@ -64,7 +64,7 @@ exports.addKamar = async (request, response) => {
       success: false,
       message: "Room types doesn't exist",
     });
-  }
+  } 
 };
 exports.updateKamar = async (request, response) => {
   let dataKamar = {

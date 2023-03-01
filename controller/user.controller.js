@@ -7,6 +7,8 @@ const upload = require("./upload-user").single(`foto`);
 const modelUser = require("../models/index").user;
 const query = require("sequelize").Op
 
+
+
 // exports.login = async (request, response) => {
 //   try {
 //     const params = {
